@@ -8,6 +8,10 @@ const logArrays = (array: number[]) => {
     for(const element of array)
         console.log(element);
 }
+//get size of arr
+console.log("length of array is: ", unionOfTwoArrays.length);
+//includes()
+console.log(unionOfTwoArrays.includes(0));
 //indexOf() return index of first match
 console.log("index of 7 is", unionOfTwoArrays.indexOf(7));
 //logArrays(unionOfTwoArrays);
