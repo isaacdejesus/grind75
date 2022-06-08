@@ -30,3 +30,4 @@ const validP = (s: string): boolean => {
 };
 
 console.log(validP("{]"));
+

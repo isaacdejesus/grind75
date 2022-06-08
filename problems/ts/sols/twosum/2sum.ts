@@ -9,19 +9,5 @@ const twoSum = (nums:number[], target:number): number[] => {
     };
     return [0];
 };
-const twosum = (nums: number[], target: number): number[] => {
-    const len = nums.length;
-    const hash = new Map([[nums[0], 0]]);
-    for(let i = 1; i < len; i++){
-        if(hash.has(target - nums[i])){
-                 const val = hash.get(target - nums[i]);
-                if(val !== undefined)
-                    return [val,  i];
-        }
-        else
-            hash.set(nums[i], i);
-    }
-    return []
-};
 const arr = [3, 4, 5, 1];
 console.log(twoSum(arr, 4));

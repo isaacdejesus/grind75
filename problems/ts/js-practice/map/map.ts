@@ -1,4 +1,3 @@
-import { updateExportSpecifier } from "typescript";
 
 let John = {name: "John doee"},
     Lily = {name: "Lily Bush"},
