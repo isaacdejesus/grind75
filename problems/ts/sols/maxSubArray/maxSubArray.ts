@@ -8,3 +8,14 @@ const maxSubArray = (nums: number[]): number => {
     };
     return global;
 };
+const maxSubarray = (nums: number[]): number => {
+    let maxSub = nums[0];
+    let curSum: number = 0;
+    for(let i = 0; i <= nums.length - 1; i++){
+        if (curSum < 0)
+            curSum = 0;
+        curSum += nums[i];
+        maxSub = Math.max(maxSub, curSum);
+    }
+    return maxSub;
+}
